@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Irregular Human</title>
+<style>
+/* Minimal, in-file styling — still all HTML */
+:root{--bg:#0f1113;--card:#121417;--accent:#8be9fd;--muted:#9aa3ad;color-scheme:dark}
+html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;background:linear-gradient(180deg,#070709 0%,var(--bg) 100%);color:#e6eef6}
+.wrap{max-width:900px;margin:48px auto;padding:28px}
+header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:48px;height:48px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#6dd3ff);display:flex;align-items:center;justify-content:center;font-weight:700;color:#061016}
+h1{font-size:1.5rem;margin:0}
+p.lead{margin:6px 0 0;color:var(--muted)}
+main{margin-top:28px;display:grid;grid-template-columns:1fr;gap:18px}
+.card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(4,6,8,0.6)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+footer{margin-top:20px;text-align:center;color:var(--muted);font-size:0.9rem}
+a.button{display:inline-block;padding:10px 14px;border-radius:8px;background:transparent;border:1px solid rgba(139,233,253,0.18);text-decoration:none;color:var(--accent)}
+ul{margin:10px 0;padding-left:1.2rem}
+.muted{color:var(--muted)}
+@media (max-width:520px){.wrap{margin:20px;padding:16px}.logo{width:40px;height:40px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<div class="brand">
+<div class="logo">IH</div>
+<div>
+<h1>Irregular Human</h1>
+<p class="lead">Designing unusual digital experiences that linger.</p>
+</div>
+</div>
+<nav>
+<a class="button" href="#contact">Contact</a>
+</nav>
+</header>
+
+
+<main>
+<section class="card">
+<h2>What we do</h2>
+<p class="muted">Irregular Human builds immersive interactive products with a focus on atmosphere, narrative, and polish. We blend game design, interactive storytelling and technical craft to ship memorable experiences.</p>
+<div class="grid" style="margin-top:12px">
+<div>
+<strong>Design</strong>
+<p class="muted">Systems-first interaction design and worldbuilding.</p>
+</div>
+<div>
+<strong>Engineering</strong>
+<p class="muted">Robust gameplay code, tools and pipelines.</p>
+</div>
+<div>
+<strong>Production</strong>
+<p class="muted">From prototype to polished release — planning, QA and launch support.</p>
+</div>
+</div>
+</section>
+
+
+<section class="card">
+<h2>Featured project</h2>
+<p class="muted">We recently shipped a narrative-driven cooperative game that blends procedural spaces with handcrafted encounters. The project emphasizes tension, player choice and replayability.</p>
+</section>
+
+
+<section class="card" id="contact">
+<h2>Contact</h2>
+<p class="muted">Reach out for partnerships, commissions, or to talk shop.</p>
+<ul>
+<li>Email: <span class="muted">hello@irregularhuman.example</span></li>
+<li>Location: <span class="muted">Remote / Europe</span></li>
+</ul>
+<p style="margin-top:10px"><a class="button" href="mailto:hello@irregularhuman.example">Email us</a></p>
+</section>
+</main>
+
+
+<footer>
+<div>© <span id="year"></span> Irregular Human — All rights reserved.</div>
+<script>
+// small runtime touch inside the single HTML file
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</footer>
+</div>
+</body>
+</html>
