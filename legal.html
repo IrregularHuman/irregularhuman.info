@@ -1,0 +1,94 @@
+    
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Impressum & Datenschutz - Irregular Human</title>
+<style>
+/* Consistent styling with index.html */
+:root{--bg:#0f1113;--card:#121417;--accent:#8be9fd;--muted:#9aa3ad;color-scheme:dark}
+html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;background:linear-gradient(180deg,#070709 0%,var(--bg) 100%);color:#e6eef6}
+.wrap{max-width:800px;margin:48px auto;padding:28px}
+
+header{margin-bottom:40px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px;}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:48px;height:48px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#6dd3ff);display:flex;align-items:center;justify-content:center;font-weight:700;color:#061016;overflow:hidden;flex-shrink:0}
+.logo img{width:100%;height:100%;object-fit:cover;display:block}
+
+h1{font-size:1.5rem;margin:0}
+h2{margin-top:2.5rem; font-size: 1.4rem; color: var(--accent); border-bottom: 1px solid rgba(139,233,253,0.1); padding-bottom:10px;}
+h3{margin-top:1.5rem; font-size: 1.1rem; color: #fff;}
+p, li{line-height: 1.6; color: var(--muted); margin-bottom: 1rem;}
+ul{margin-bottom: 1rem;}
+
+.card{background:var(--card);border-radius:12px;padding:32px;box-shadow:0 6px 18px rgba(4,6,8,0.6); margin-bottom: 40px;}
+
+a{color:var(--accent); text-decoration: none;}
+a:hover{text-decoration: underline;}
+a.button{display:inline-block;padding:8px 12px;border-radius:6px;background:transparent;border:1px solid rgba(139,233,253,0.18);text-decoration:none;color:var(--accent); font-size: 0.9rem;}
+
+.lang-switch{display:flex; gap:10px; margin-bottom: 20px;}
+.lang-switch a{color: var(--muted); font-size: 0.9rem; border: 1px solid rgba(255,255,255,0.1); padding: 4px 10px; border-radius: 4px;}
+.lang-switch a:hover{border-color: var(--accent); color: var(--accent); text-decoration: none;}
+
+@media (max-width:520px){.wrap{margin:20px;padding:16px} header{flex-direction:column; align-items:flex-start;}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+    <header>
+        <div class="brand">
+            <div class="logo">
+                <img src="your-logo.png" alt="IH"> 
+            </div>
+            <div>
+                <h1>Irregular Human</h1>
+                <p style="margin:0; color:var(--muted)">Legal</p>
+            </div>
+        </div>
+        <div>
+            <a class="button" href="index.html">← Back to Home</a>
+        </div>
+    </header>
+
+    <main class="card" id="german">
+        
+        <!-- DEUTSCHE VERSION -->
+        <h2>Impressum</h2>
+        <p>Angaben gemäß § 5 DDG:</p>
+        
+        <p>
+            <strong>[Dein Vorname] [Dein Nachname]</strong><br>
+            [Deine Straße Hausnummer]<br>
+            [PLZ] [Deine Stadt]<br>
+            Deutschland
+        </p>
+
+        <h3>Kontakt</h3>
+        <p>
+            E-Mail: hello@irregularhuman.example<br>
+            <!-- Telefon: [Optional, falls vorhanden] -->
+        </p>
+
+        <!-- Falls du eine USt-IdNr. hast, hier eintragen. Wenn Kleinunternehmer, weglassen. -->
+        <!-- 
+        <h3>Umsatzsteuer-ID</h3>
+        <p>
+            Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br>
+            DE [Deine Nummer]
+        </p>
+        -->
+    </main>
+    
+    <footer style="margin-top: 40px; text-align: center; color: var(--muted); font-size: 0.9rem;">
+        <div>© <span id="year"></span> Irregular Human</div>
+        <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    </footer>
+</div>
+
+</body>
+</html>
+
+  
